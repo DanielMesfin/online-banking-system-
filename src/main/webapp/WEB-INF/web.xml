@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+ id="WebApp_ID" version="4.0">
+  <display-name>EthioBankWebApplication</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+   <servlet>
+  <servlet-name>createAccountHandler</servlet-name>
+  <servlet-class>createAccountHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createAccountHandler</servlet-name>
+  <url-pattern>/createAccountHandler</url-pattern>
+  </servlet-mapping>
+     <servlet>
+  <servlet-name>loginAccountHandler</servlet-name>
+  <servlet-class>loginAccountHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginAccountHandler</servlet-name>
+  <url-pattern>/loginAccountHandler</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>trasactionAccountHolder</servlet-name>
+  <servlet-class>trasactionAccountHolder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>trasactionAccountHolder</servlet-name>
+  <url-pattern>/trasactionAccountHolder</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>bankTransactionHandler</servlet-name>
+  <servlet-class>bankTransactionHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bankTransactionHandler</servlet-name>
+  <url-pattern>/bankTransactionHandler</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  <servlet-name>userUpdate</servlet-name>
+  <servlet-class>userUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userUpdate</servlet-name>
+  <url-pattern>/userUpdate</url-pattern>
+  </servlet-mapping>
+</web-app>
